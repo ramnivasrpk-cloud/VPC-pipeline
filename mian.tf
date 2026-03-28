@@ -1,5 +1,5 @@
-resource "aws_instance" "ec2" {
-  ami           = "ami-0c02fb55956c7d316" # Amazon Linux (example)
+resource "aws_instance" "ubuntu_server" {
+  ami           = "ami-0f5ee92e2d63afc18" # Ubuntu (ap-south-1)
   instance_type = "t2.micro"
 
   subnet_id              = aws_subnet.public_subnet.id
@@ -8,6 +8,6 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "terraform-ec2"
+    Name = "ram-ubuntu-server"
   }
 }
