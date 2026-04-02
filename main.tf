@@ -1,5 +1,5 @@
 resource "aws_instance" "ubuntu_server" {
-  ami           = "ami-0f5ee92e2d63afc18" # Ubuntu (ap-south-1)
+  ami           = "ami-05d2d839d4f73aafb" # Ubuntu (ap-south-1)
   instance_type = "t2.micro"
 
   subnet_id              = aws_subnet.public_subnet.id
